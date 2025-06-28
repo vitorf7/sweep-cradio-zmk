@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LEFT CONTROL}
   - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LGUI}
+  - {t: D, h: LEFT GUI}
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - {t: J, h: RGUI}
-  - {t: K, h: RCTRL}
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT GUI}
   - {t: L, h: RALT}
-  - BSPC
+  - {t: ;, h: RIGHT CONTROL}
   - Z
   - X
   - C
@@ -31,45 +31,10 @@ layers:
   - ','
   - .
   - ENTER
-  - {t: TAB, h: SYMBOL}
-  - LSHIFT
-  - SPACE
   - {t: TAB, h: NUM & NAVIGATION}
-  WIN:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LCTRL}
-  - G
-  - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RGUI}
-  - {t: L, h: RALT}
-  - BSPC
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - ENTER
-  - {t: TAB, h: SYMBOL}
-  - LSHIFT
-  - SPACE
-  - {t: TAB, h: NUM & NAVIGATION}
+  - {t: ENTER, h: LSHIFT}
+  - {t: SPACE, h: FUNC}
+  - {t: BACKSPACE, h: SYMBOL}
   NUM & NAVIGATION:
   - '1'
   - '2'
@@ -101,10 +66,10 @@ layers:
   - PG UP
   - END
   - '&bootloader'
-  - {t: ▽, type: trans}
+  - {type: held}
   - ESC
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   SYMBOL:
   - '!'
   - '@'
@@ -136,10 +101,10 @@ layers:
   - +
   - '|'
   - '?'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: MOUSE, h: toggle}
-  - {t: ▽, type: trans}
+  - {type: held}
   FUNC:
   - F1
   - F2
@@ -148,7 +113,7 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '2'}
   - OUT TOG
-  - {t: WIN, h: toggle}
+  - {t: DEFAULT, h: toggle}
   - MUTE
   - PREV
   - F5
@@ -171,10 +136,10 @@ layers:
   - '&soft_off'
   - VOL DN
   - NEXT
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   MOUSE:
   - {t: MOUSE, h: toggle}
   - '&mkp MB4'
@@ -210,3 +175,10 @@ layers:
   - LSHIFT
   - '&mkp LCLK'
   - '&mkp RCLK'
+combos:
+- p: [32, 33]
+  k: {t: MOUSE, h: toggle}
+- p: [31, 32]
+  k: ESCAPE
+- p: [30, 33]
+  k: '&caps_word'
