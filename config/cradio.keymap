@@ -150,7 +150,7 @@
             bindings = <
 &kp Q                &kp W        &kp E            &kp R              &kp T               &kp Y                        &kp U                            &kp I             &kp O        &kp P
 &HML LEFT_CONTROL A  &HML LALT S  &HML LEFT_GUI D  &HML LEFT_SHIFT F  &kp G               &kp H                        &HMR RIGHT_SHIFT J               &HMR RIGHT_GUI K  &HMR RALT L  &HMR RIGHT_CONTROL SEMI
-&kp Z                &kp X        &kp C            &kp V              &kp B               &kp N                        &kp M                            &kp COMMA         &kp DOT      &kp ENTER
+&kp Z                &kp X        &kp C            &kp V              &kp B               &kp N                        &kp M                            &kp COMMA         &kp DOT      &kp SLASH
                                                    &lt 1 TAB          &mt LSHIFT ENTER    &hold_tap_quick_tap 3 SPACE  &hold_tap_quick_tap 2 BACKSPACE
             >;
         };
@@ -158,20 +158,20 @@
         NUM_NAVIGATION {
             display-name = "NUM & NAVIGATION";
             bindings = <
-&kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-&kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bootloader
-                              &trans   &kp ESC    &trans    &trans
+&kp N1      &kp N2    &kp N3     &kp N4   &kp N5    &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
+&kp ESCAPE  &kp CAPS  &kp PSCRN  &kp INS  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&trans      &trans    &trans     &trans   &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bootloader
+                                 &trans   &trans    &trans    &trans
             >;
         };
 
         Symbol {
             display-name = "SYMBOL";
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &default_report    &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &bootloader        &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
-                              &trans    &trans             &tog 4     &trans
+&kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp DQT   &trans  &kp PIPE  &kp UNDER  &default_report    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp APOS
+&trans    &trans  &trans    &kp TILDE  &bootloader        &kp GRAVE  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp BACKSLASH
+                            &trans     &trans             &tog 4     &trans
             >;
         };
 
