@@ -30,7 +30,7 @@ layers:
   - M
   - ','
   - .
-  - ENTER
+  - /
   - {t: TAB, h: NUM & NAVIGATION}
   - {t: ENTER, h: LSHIFT}
   - {t: SPACE, h: FUNC}
@@ -46,7 +46,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - DEL
+  - ESCAPE
   - CAPS
   - PSCRN
   - INS
@@ -55,7 +55,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -67,7 +67,7 @@ layers:
   - END
   - '&bootloader'
   - {type: held}
-  - ESC
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYMBOL:
@@ -79,28 +79,28 @@ layers:
   - ^
   - '&'
   - '*'
-  - '`'
-  - '~'
-  - '"'
-  - '['
-  - '{'
   - (
+  - )
+  - '"'
+  - {t: ▽, type: trans}
+  - '|'
+  - _
   - '&default_report'
-  - /
   - '-'
   - '='
-  - ':'
-  - ;
-  - ''''
+  - '['
   - ']'
-  - '}'
-  - )
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
   - '&bootloader'
-  - \
-  - _
+  - '`'
   - +
-  - '|'
-  - '?'
+  - '{'
+  - '}'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: MOUSE, h: toggle}
