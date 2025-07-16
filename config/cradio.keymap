@@ -161,10 +161,10 @@
         Symbol {
             display-name = "SYMBOL";
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp DQT   &trans  &kp PIPE  &kp UNDER  &default_report    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp APOS
-&trans    &trans  &trans    &kp TILDE  &bootloader        &kp GRAVE  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp BACKSLASH
-                            &trans     &trans             &tog 4     &trans
+&kp EXCL  &kp AT         &kp HASH          &kp DLLR   &kp PRCNT          &kp CARET  &kp AMPS   &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp DQT   &trans         &kp PIPE          &kp UNDER  &default_report    &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp APOS
+&trans    &kp LESS_THAN  &kp GREATER_THAN  &kp TILDE  &bootloader        &kp GRAVE  &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp BACKSLASH
+                                           &trans     &trans             &tog 4     &trans
             >;
         };
 
